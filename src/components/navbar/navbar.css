@@ -36,11 +36,11 @@ p{
     font-size: 18px;
     line-height: 25px;
     text-transform: capitalize;
-
     margin: 0 1rem;
     cursor: pointer;
 }
-.ai__navbar-sign button{
+.ai__navbar-sign button,
+.ai__navbar-menu_container-links-sign button{
     padding: 0.5rem 1rem;
     color: #fff;
     background: #FF4820;
@@ -52,4 +52,78 @@ p{
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.ai__navbar-menu{
+   margin-left: 1rem;
+   display: none;
+   justify-self: flex-end;
+   position: relative; 
+}
+.ai__navbar-menu svg {
+    cursor: pointer;
+}
+.ai__navbar-menu_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px; 
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+.ai__navbar-menu-links_container {
+    display: flex;
+    flex-direction: column;
+}
+.ai__navbar-menu-links_container p{
+    margin: 1rem 0;  
+    color: #fff; 
+}
+.ai__navbar-menu_container-links-sign p {
+    margin: 1rem 0;
+}
+
+@media screen and (max-width:1050px){
+
+.ai__navbar-links_container {
+    display: none;
+}
+.ai__navbar-menu{
+    display: flex;
+    justify-self: end;
+}
+}
+@media screen and (max-width:700px){
+
+    .ai__navbar{
+       padding: 2rem 4rem;
+    }
+    
+}
+@media screen and (max-width:504px){
+
+    .ai__navbar{
+       padding: 2rem 4rem;
+    }
+    .ai__navbar-sign{
+        display: none;
+    }
+    .ai__navbar-menu_container{
+        top: 20px;
+        justify-self: end;
+    }
+    .ai__navbar-menu_container-links-sign{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: end;
+    }
 }
