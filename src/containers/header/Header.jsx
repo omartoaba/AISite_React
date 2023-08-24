@@ -4,7 +4,7 @@ import ai from '../../assets/airobot.jpg'
 import people from '../../assets/people.png'
 function Header() {
   return (
-    <div className='ai__header section__padding'>
+    <div className='ai__header section__padding' id='home'>
       <div className="ai__header-content">
         <h1 className='gradient__text'>
          Let's Build Something amazing with GPT-3 OpenAI

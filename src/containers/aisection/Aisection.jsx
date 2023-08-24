@@ -4,7 +4,7 @@ import { Feature } from '../../components'
 
 function Aisection() {
   return (
-    <div className='ai__aisection section-padding' id='aisection'>
+    <div className='ai__aisection section-padding' id='ai'>
         <div className="ai__aisection-feature">
             <Feature title='What is AI' text='Lorem ipsum dolor sit amet consectetur
              adipisicing elit. Ab omnis minus molestias unde aut enim quaerat,
